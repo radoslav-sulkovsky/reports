@@ -30,7 +30,7 @@
         } */
         
         public function parseDaily() {
-            $rows = $this->xlsx->rows(7);
+            $rows = $this->xlsx->rows();
             
             if(count($rows) >= 2) {
                 $sheetName = $this->xlsx->sheetNames();
