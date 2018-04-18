@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Czas generowania: 18 Kwi 2018, 15:35
+-- Czas generowania: 18 Kwi 2018, 15:38
 -- Wersja serwera: 5.7.21-0ubuntu0.16.04.1
 -- Wersja PHP: 7.0.28-0ubuntu0.16.04.1
 
@@ -42,11 +42,11 @@ CREATE TABLE `breaks_details` (
 
 CREATE TABLE `worktime` (
   `id` int(11) NOT NULL,
-  `agent` varchar(64) NOT NULL,
+  `agent` varchar(64) CHARACTER SET latin1 NOT NULL,
   `data` datetime NOT NULL,
   `worktime` int(11) NOT NULL,
   `pausetime` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Indeksy dla zrzutów tabel
