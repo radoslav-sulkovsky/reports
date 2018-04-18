@@ -31,6 +31,7 @@
         
         public function parseDaily() {
             $rows = $this->xlsx->rows();
+            $agents = array();
             
             if(count($rows) >= 2) {
                 $sheetName = $this->xlsx->sheetNames();
