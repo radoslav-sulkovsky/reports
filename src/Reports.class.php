@@ -76,3 +76,4 @@
             return ['break_start' => $this->date .' '. $times[0], 'break_stop' => $this->date .' '. $times[1], 'pause_time' => (int) strtotime($times[1])-strtotime($times[0])];
         }
     }
+    
