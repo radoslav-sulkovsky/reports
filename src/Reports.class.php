@@ -14,7 +14,7 @@
             }  
         }
         
-        public function parseMonthly() {
+        /* public function parseMonthly() {
              $rows = $this->xlsx->rows(7);
             
             if(count($rows) >= 2) {
@@ -27,7 +27,7 @@
             }
             
             return $agents;
-        }
+        } */
         
         public function parseDaily() {
             $rows = $this->xlsx->rows(7);
